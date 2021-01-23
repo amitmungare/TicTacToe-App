@@ -12,10 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="player x turn"
-        android:textSize="24sp"
+        android:text="Player x turn"
+        android:textSize="40sp"
         android:textStyle="italic"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="40dp"
         />
 
     <LinearLayout
@@ -28,24 +29,24 @@
             android:id="@+id/button1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textSize="50sp"
-            android:textColor="@android:color/black"
+            android:textSize="80sp"
+            android:textColor="@android:color/white"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
         <Button
             android:id="@+id/button2"
-            android:textSize="50sp"
+            android:textSize="80sp"
             android:layout_marginRight="10dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
         <Button
             android:id="@+id/button3"
-            android:textSize="50sp"
+            android:textSize="80sp"
             android:layout_marginRight="10dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
@@ -59,26 +60,26 @@
 
         <Button
             android:id="@+id/button4"
-            android:textSize="50sp"
+            android:textSize="80sp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
         <Button
             android:id="@+id/button5"
-            android:textSize="50sp"
+            android:textSize="80sp"
             android:layout_marginRight="10dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
         <Button
             android:id="@+id/button6"
-            android:textSize="50sp"
+            android:textSize="80sp"
             android:layout_marginRight="10dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
@@ -93,26 +94,26 @@
 
         <Button
             android:id="@+id/button7"
-            android:textSize="50sp"
+            android:textSize="80sp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
         <Button
             android:id="@+id/button8"
-            android:textSize="50sp"
+            android:textSize="80sp"
             android:layout_marginRight="10dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
         <Button
             android:id="@+id/button9"
-            android:textSize="50sp"
+            android:textSize="80sp"
             android:layout_marginRight="10dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
@@ -121,13 +122,14 @@
 
     <Button
         android:id="@+id/resetbtn"
-        android:layout_width="wrap_content"
+        android:layout_width="166dp"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="RESET"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="80dp"/>
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="90dp"
+        android:padding="10dp"
+        android:text="Restart"
+        android:textSize="24sp" />
 
 
 </LinearLayout>
