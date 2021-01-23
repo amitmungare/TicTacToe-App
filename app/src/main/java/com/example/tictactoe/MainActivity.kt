@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.HorizontalScrollView
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -46,9 +47,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun initializeBoardStatus() {
         for (i in 0..2){
             for (j in 0..2){
-                boardStatus[0][0] == -1
-                board[0][0].isEnabled = true
-                board[0][0].text =""
+                boardStatus[i][j] = -1
+            }
+        }
+
+        for(i in board){
+            for (button in i){
+                button.isEnabled =true
+                button.text = ""
             }
         }
     }
@@ -97,11 +103,42 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         if (TURN_COUNT ==9){
             updateDisplay("Game Draw")
         }
+
+        checkWinner()
+
+    }
+
+    private fun checkWinner() {
+//        Horizontal Rows
+
+        for(i in 0..2){
+            if(boardStatus[i][0]==boardStatus[i][1] && boardStatus[i][0]==boardStatus[i][2]){
+                if(boardStatus[i][0]==1){
+                    updateDisplay("Player X Winner")
+                    break
+                }else if(boardStatus[i][0]==0){
+                    updateDisplay("Player O Winner")
+                    break
+                }
+            }
+        }
     }
 
     private fun updateDisplay(text: String) {
-
         displaytv.text = text
+
+        if(text.contains("Winner")){
+            disableButton()
+        }
+
+    }
+
+    private fun disableButton(){
+        for (i in board){
+            for (button in i){
+                button.isEnabled=false
+            }
+        }
     }
 
     private fun updateValue(row: Int, col: Int, player: Boolean) {
